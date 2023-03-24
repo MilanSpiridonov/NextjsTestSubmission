@@ -1,0 +1,2 @@
+# NextjsTestSubmission
+Assignment.
