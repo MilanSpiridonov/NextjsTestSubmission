@@ -10,11 +10,12 @@ font-family: Poppins;
   line-height: 1rem;
   font-weight: 600;
 padding:0;
-  
+margin-bottom:0;
 `
 export const StyledParagraph = styled.p`
 font-family: Poppins;
   font-size: 1rem;
+margin-top:8pt;
 //   padding:0;
 //   margin:0;
 `
@@ -28,15 +29,15 @@ justify-content:center;
 `;
 
 export const StyledCardContainer = styled.div`
-// width:350px;
+ width:350px;
 text-align:left;
 display:grid;
 grid-template-columns: 64px auto;
 margin:2rem;
-padding .5rem;
+padding 0 2rem;
 background-color:whitesmoke;
 border-radius:6%;
-
+grid-column-gap:20px;
 `
 export const StyledCardTextContent = styled.div`
 margin:.5rem;
