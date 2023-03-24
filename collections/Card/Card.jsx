@@ -1,15 +1,15 @@
 // The Card to be exported goes here
 import Image from 'next/image';
 import { StyledParagraph, StyledCardTextContent, StyledTitle, StyledImageContainer, StyledCardContainer } from './elements';
-export function Card({ icon, Title, Paragraph }) {
+export function Card({ cardsParams }) {
     return (
-        <StyledCardContainer>
+        <StyledCardContainer width={cardsParams.width}>
             <StyledImageContainer>
-                <Image layout="responsive" src={icon.src} alt={icon.alt} width={icon.width} height={icon.height} />
+                <Image layout="responsive" src={cardsParams.cardData.icon.src} alt={cardsParams.cardData.icon.alt} width={cardsParams.cardData.icon.width} height={cardsParams.cardData.icon.height} />
             </StyledImageContainer>
             <StyledCardTextContent>
-                <StyledTitle>{Title}</StyledTitle>
-                <StyledParagraph>{Paragraph}</StyledParagraph>
+                <StyledTitle>{cardsParams.cardData.Title}</StyledTitle>
+                <StyledParagraph>{cardsParams.cardData.Paragraph}</StyledParagraph>
             </StyledCardTextContent>
         </StyledCardContainer>
     )

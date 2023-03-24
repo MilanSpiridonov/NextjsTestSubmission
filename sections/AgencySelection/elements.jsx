@@ -26,13 +26,12 @@ color: black;
 `;
 
 export const StyledDescription = styled((props) => <SectionSubheading {...props} />)`
-margin: 1.563rem 0 0;
+margin: 0 0 3rem 0;
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
 color: black;
 width: 30 %;
-margin-left: 11.125rem;
 font-family: sans - serif;
 `;
 
@@ -41,10 +40,8 @@ display: flex;
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)`
-max-width: 32.03rem;
-max-height: 65rem;
-width: 100 %;
-height: 100 %;
+width: 100%;
+height: 100%;
 margin-left: auto;
 `;
 
@@ -53,5 +50,12 @@ export const FlexContainer = styled(({ ...props }) => <div {...props} />)`
 
 export const MainContentGrid = styled(({ ...props }) => <div {...props} />)`
 display:grid;
-grid-column-template:auto auto;
+grid-template-columns:auto auto;
+gap:4rem;
+`
+export const CardsContainer = styled(({ ...props }) => <div {...props} />)`
+display:flex;
+flex-flow:column;
+gap:2rem;
+margin:20px 0;
 `

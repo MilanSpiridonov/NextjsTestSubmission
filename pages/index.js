@@ -12,7 +12,9 @@ const card1 = {
   Title: 'Brief',
   Paragraph: <>Complete <b>brief writing or simple guidance</b> on what to include, we've got you covered.</>
 }
+const agencyVideo = { src: "/img/video.png", alt: "", width: '358', height: '555' }
 const agencySelectionProps = {
+  video: agencyVideo,
   title: "Managed Agency Selection",
   description: "Strengthen your onboarding process",
   bgImage: { src: "/img/background.png", alt: "", width: '100vw', height: '100vh' },
