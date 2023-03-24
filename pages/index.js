@@ -12,14 +12,26 @@ const card1 = {
   Title: 'Brief',
   Paragraph: <>Complete <b>brief writing or simple guidance</b> on what to include, we've got you covered.</>
 }
+const card2 = {
+  icon: { src: "/img/search_ico.png", alt: "", width: '64', height: '64' },
+  Title: 'Search',
+  Paragraph: <>In-depth agency search covering; <b>criteria matching</b>, door knocking and due-dilligence vetting.</>
+}
+const card3 = {
+  icon: { src: "/img/pitch_ico.png", alt: "", width: '64', height: '64' },
+  Title: 'Search',
+  Paragraph: <>Comprehensive <b>pitch management</b>, including comms, diary management and pitch hosting.</>
+}
 const agencyVideo = { src: "/img/video.png", alt: "", width: '358', height: '555' }
 const agencySelectionProps = {
   video: agencyVideo,
-  title: "Managed Agency Selection",
+  title: "Managed agency selection",
   description: "Strengthen your onboarding process",
   bgImage: { src: "/img/background.png", alt: "", width: '100vw', height: '100vh' },
   cards: [
-    card1
+    card1,
+    card2,
+    card3
   ]
 };
 export default function Home() {

@@ -2,8 +2,9 @@
 import Image from 'next/image';
 import { StyledParagraph, StyledCardTextContent, StyledTitle, StyledImageContainer, StyledCardContainer } from './elements';
 export function Card({ cardsParams }) {
+    console.log(cardsParams)
     return (
-        <StyledCardContainer width={cardsParams.width}>
+        <StyledCardContainer {...cardsParams}>
             <StyledImageContainer>
                 <Image layout="responsive" src={cardsParams.cardData.icon.src} alt={cardsParams.cardData.icon.alt} width={cardsParams.cardData.icon.width} height={cardsParams.cardData.icon.height} />
             </StyledImageContainer>

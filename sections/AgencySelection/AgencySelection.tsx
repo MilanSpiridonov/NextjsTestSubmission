@@ -20,15 +20,15 @@ export const AgencySelection = ({ video, cards, bgImage, title, description, cta
     const cardsParams = [
         {
             cardData: cards[0],
-            width: '400px',
+            width: '350'//px
         },
         {
-            cardData: cards[0],
-            width: '450px'
+            cardData: cards[1],
+            width: '380'//px
         },
         {
-            cardData: cards[0],
-            width: '500px'
+            cardData: cards[2],
+            width: '410'//px
         },
     ]
     return (
@@ -36,7 +36,7 @@ export const AgencySelection = ({ video, cards, bgImage, title, description, cta
             <StyledTextContainer>
                 <StyledTitle>{title}</StyledTitle>
                 <StyledDescription>{description}</StyledDescription>
-                <MainContentGrid>
+                <MainContentGrid bgImageSrc={bgImage.src} {...props}>
                     <StyledImageContainer>
                         <Image layout="fixed" src={video.src} alt={video.alt} width={video.width} height={video.height} />
                     </StyledImageContainer>

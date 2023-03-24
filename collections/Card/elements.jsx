@@ -28,16 +28,19 @@ justify-content:center;
 // margin-left: auto;
 `;
 
-export const StyledCardContainer = styled(({ ...props, cardWidth })).div`
-width:${({ cardWidth }) => cardWidth}px;
-text-align:left;
-display:grid;
-grid-template-columns: 64px auto;
-padding 0 2rem;
-background-color:whitesmoke;
-border-radius:6%;
-grid-column-gap:20px;
-`
+export const StyledCardContainer = styled.div`
+  width: ${({ width }) => width}px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 64px auto;
+  padding: 0 2rem;
+  background-color: whitesmoke;
+  border-radius: 6%;
+  grid-column-gap: 20px;
+`;
+
+
+
 export const StyledCardTextContent = styled.div`
-margin:.5rem;
+margin: .5rem;
 `

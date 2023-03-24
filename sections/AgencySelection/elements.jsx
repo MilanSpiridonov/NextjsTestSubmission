@@ -6,13 +6,14 @@ export const StyledContainer = styled(({ height, ...props }) => <SectionContaine
 align-items: center;
 `;
 export const StyledContainerWithBackground = styled(({ bgImageSrc, height, ...props }) => <SectionContainer style={{
-  backgroundImage: `url(${bgImageSrc})`
+  
 
 }} {...props} />)`
 display:flex;
 justify-content:center;
 height:100vh;
 text-align:center;
+margin: 100px 0;
 `
 export const StyledGetStartedBtn = styled((props) => <Button {...props} variant="contained" color="main" />)`
 margin - top: 4.375rem;
@@ -48,7 +49,11 @@ margin-left: auto;
 export const FlexContainer = styled(({ ...props }) => <div {...props} />)`
 `
 
-export const MainContentGrid = styled(({ ...props }) => <div {...props} />)`
+export const MainContentGrid = styled(({ bgImageSrc, ...props }) => <div {...props} style={{
+  backgroundImage: `url(${bgImageSrc})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'left'
+}} />)`
 display:grid;
 grid-template-columns:auto auto;
 gap:4rem;
