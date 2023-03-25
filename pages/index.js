@@ -10,17 +10,23 @@ const heroProps = {
 const card1 = {
   icon: { src: "/img/brief_ico.png", alt: "", width: '64', height: '64' },
   Title: 'Brief',
-  Paragraph: <>Complete <b>brief writing or simple guidance</b> on what to include, we've got you covered.</>
+  Paragraph: <>Complete <b>brief writing or simple guidance</b> on what to include, we've got you covered.</>,
+  width: '350',//px
+  link: '/briefgenerator'
 }
 const card2 = {
   icon: { src: "/img/search_ico.png", alt: "", width: '64', height: '64' },
   Title: 'Search',
-  Paragraph: <>In-depth agency search covering; <b>criteria matching</b>, door knocking and due-dilligence vetting.</>
+  Paragraph: <>In-depth agency search covering; <b>criteria matching</b>, door knocking and due-dilligence vetting.</>,
+  width: '380',//px
+  link: '/404'
 }
 const card3 = {
   icon: { src: "/img/pitch_ico.png", alt: "", width: '64', height: '64' },
-  Title: 'Search',
-  Paragraph: <>Comprehensive <b>pitch management</b>, including comms, diary management and pitch hosting.</>
+  Title: 'Pitch',
+  Paragraph: <>Comprehensive <b>pitch management</b>, including comms, diary management and pitch hosting.</>,
+  width: '410',//px
+  link: '/404'
 }
 const agencyVideo = { src: "/img/video.png", alt: "", width: '358', height: '555' }
 const agencySelectionProps = {
