@@ -2,7 +2,6 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "~/styles";
 
 function MyApp({ Component, pageProps }) {
-  console.log(pageProps);
   return (
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />

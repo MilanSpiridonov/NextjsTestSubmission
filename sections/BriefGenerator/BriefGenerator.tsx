@@ -1,10 +1,10 @@
 import {
     StyledTitle,
 } from "./elements";
-export const BriefGenerator = ({ }) => {
+export const BriefGenerator = ({ pageTitle, ...props }) => {
     return (
         <StyledTitle>
-            Brief Generator
+            {pageTitle}
         </StyledTitle>
     )
 }
